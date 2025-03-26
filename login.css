@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Background Image with Dark Gradient */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(6, 6, 6, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://media.licdn.com/dms/image/v2/D5612AQEoTzK2rVxHZQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1707420465234?e=2147483647&v=beta&t=IzoxtBV0Y1wyOq5kD05bT5UVW6cSwUVvVJ1n65JdYxA') no-repeat center center/cover;
+}
+
+/* Simple, Non-Blurred Login Box */
+.login-box {
+    width: 350px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.93);
+    text-align: center;
+}
+
+/* Text Styling */
+.login-box h2,
+.input-box label,
+.remember-forgot,
+.register-link {
+    color: #eee9e9;
+}
+
+/* Input Fields */
+.input-box {
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #000000;
+    background: transparent;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #000000;
+    transition: 0.5s;
+    font-size: 16px;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: 0;
+    font-size: 12px;
+    color: #16003e;
+}
+
+/* Remember & Forgot Password */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #170f0f;
+    margin-bottom: 20px;
+}
+
+.remember-forgot a {
+    color: #17013a;
+    text-decoration: none;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #03a9f4;
+    border: none;
+    color: #0b0707;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0288d1;
+}
+
+/* Register Link */
+.register-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #010101;
+}
+
+.register-link a {
+    color: #01202f;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
